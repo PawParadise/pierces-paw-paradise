@@ -3,7 +3,7 @@ title: Pierce's Paw Paradise
 email: your-email@example.com
 description: > 
   Test desc.
-baseurl: ""  # For GitHub Pages
+baseurl: "/pierces-paw-paradise"  # For GitHub Pages
 url: "https://pawparadise.github.io"
 
 # Company Information
