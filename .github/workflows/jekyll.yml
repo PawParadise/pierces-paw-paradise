@@ -1,7 +1,7 @@
 name: Deploy Jekyll site to Pages
 on:
   push:
-    branches: ["master"]  # Changed from master
+    branches: ["master"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,11 +19,11 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.5'  # Updated to match GitHub Pages
+          ruby-version: '3.2.5'
           bundler-cache: true
           cache-version: 0
       - name: Install Bundler
-        run: gem install bundler -v '2.5.22'  # Match Gemfile
+        run: gem install bundler -v '2.5.22'
       - name: Install Dependencies
         run: bundle install
       - name: Setup Pages
