@@ -1,7 +1,7 @@
 name: Deploy Jekyll site to Pages
 on:
   push:
-    branches: ["gh-pages"]  # Changed from master
+    branches: ["master"]  # Changed from master
   workflow_dispatch:
 permissions:
   contents: read
