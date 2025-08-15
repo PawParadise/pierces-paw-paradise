@@ -6,7 +6,7 @@ gem "csv"
 gem "logger"
 gem "base64"
 
-# GitHub Pages supported plugins
+# GitHub Pages supported plugins - we think
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
   gem "jekyll-seo-tag", "~> 2.8"
