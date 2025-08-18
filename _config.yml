@@ -1,24 +1,25 @@
 # Site settings
 title: Pierce's Paw Paradise
-email: your-email@example.com
+email: store@piercespawparadise.com
 description: > 
-  Test desc.
+  Welcome to Pierce's Paw Paradise — your go-to destination for all things pets (except the pets themselves)!  Nestled in the heart of Sanibel Island at Jerry's Plaza, we're a locally owned and operated pet supply store offering a thoughtfully curated selection of toys, treats, collars, leashes, home goods, gifts, and high-quality dog and cat food.
 baseurl: "/pierces-paw-paradise"  # For GitHub Pages
 url: "https://pawparadise.github.io"
 
 # Company Information
 company_name: Pierce's Paw Paradise
-address_line: Your Address Here
-telephone_number: Your Phone Number
-fax_number: Your Fax Number
-company_email: your-email@example.com
-google_map: https://www.google.com/maps/embed?...
+address_line: 1700 Periwinkle Way, Unit 8, Sanibel, FL, 33957
+telephone_number: 239-445-6880
+# fax_number: Your Fax Number
+company_email: store@piercespawparadise.com
+google_map: https://maps.app.goo.gl/FPXdxzvSzNCW4UrF6
 
 # Social Link
-facebook_link: http://www.facebook.com
-twitter_link: http://www.twitter.com
-linkedin_link: http://www.linkedin.com
-googleplus_link: http://plus.google.com
+facebook_link: https://www.facebook.com/people/Pierces-Paw-Paradise/61558740831067/
+# twitter_link: http://www.twitter.com
+# linkedin_link: http://www.linkedin.com
+# googleplus_link: http://plus.google.com
+instagram_link: https://www.instagram.com/piercespawparadise/
 
 # Build settings
 markdown: kramdown
