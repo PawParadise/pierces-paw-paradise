@@ -382,6 +382,33 @@ p.blog-text{
 }
 
 /*
+Logo Modifications
+*/
+
+/* Brand/logo: keep aspect ratio + pull it upward without touching nav link spacing */
+.navbar-brand{
+  padding-top: 0;                 /* don't add extra vertical padding on the brand */
+  padding-bottom: 0;
+  position: relative;
+  top: -6px;                      /* move the brand up; tweak -2..-10px to taste */
+}
+
+.navbar-brand img.office-logo{
+  width: 80px;                    /* pick your size */
+  height: auto;                   /* maintain aspect ratio */
+  display: block;
+  border-radius: 50%;             /* keeps the circle shape if source is square */
+}
+
+/* Phone tweak (optional) */
+@media (max-width: 768px){
+  .navbar-brand{ top: -4px; }     /* a slightly smaller upward shift on phones */
+  .navbar-brand img.office-logo{ width: 68px; }
+}
+
+
+
+/*
 * ==========================================================================
 * Feedback Section
 * ==========================================================================
