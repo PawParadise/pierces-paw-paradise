@@ -80,3 +80,24 @@ published: true
     </div>
   </div>
 </div>
+
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbw0Fj7y9lbEZVMSJTPsyBVo_Si4VzbYPyCB1rRgCMk9JUJb7b8xj3Z2Skfezp7zKaSDCA/exec';
+  var THANKYOU = '{{ site.baseurl }}/thank-you.html';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();                 // stop browser navigating to script.google.com
+    var data = new FormData(form);
+
+    // fire-and-forget post; we don’t need to read the response
+    fetch(ENDPOINT, { method: 'POST', body: data, mode: 'no-cors' })
+      .then(function () { window.location.href = THANKYOU; })
+      .catch(function () { window.location.href = THANKYOU; }); // still send user to thank-you
+  });
+})();
+</script>
+<!-- End Contact Form -->
