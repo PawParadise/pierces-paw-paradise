@@ -1,26 +1,42 @@
 <!-- Footer -->
-<footer> 
+<footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <!-- Contact -->
+      <div class="col-md-3">
         <h3><i class="fa-solid fa-feather"></i> Contact:</h3>
         <p class="footer-contact">
           {{ site.company_name }} <br>
           <a href="https://maps.app.goo.gl/HqoAAuBB156h9MJn9" target="_blank" rel="noopener" title="Open in Google Maps">
-          1700 Periwinkle Way, Suite 8, Sanibel, FL 33957</a><br>
+            1700 Periwinkle Way, Suite 8, Sanibel, FL 33957
+          </a><br>
           Phone: {{ site.telephone_number }} <br>
           <!-- Fax: {{ site.fax_number }} <br> -->
           Email: {{ site.company_email }}<br>
         </p>
       </div>
-      <div class="col-md-4">
+
+      <!-- Store Hours (new) -->
+      <div class="col-md-3">
+        <h3><i class="fa-solid fa-clock"></i> Store Hours</h3>
+        <ul class="footer-hours" style="color:#fff; margin:0; padding:0; list-style:none;">
+          <li><strong>Mon–Fri</strong> 10:00 AM - 6:00 PM</li>
+          <li><strong>Saturday</strong> 10:00 AM - 5:00 PM</li>
+          <li><strong>Sunday</strong> 11:00 AM - 5:00 PM</li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-3">
         <h3><i class="fa fa-external-link-alt"></i> Links</h3>
         <p><a href="{{ site.baseurl }}/store.html">Shop</a></p>
         <p><a href="{{ site.baseurl }}/about">About</a></p>
         <p><a href="{{ site.baseurl }}/contact">Contact</a></p>
         <p><a href="{{ site.baseurl }}/blog">Blog</a></p>
       </div>
-        <div class="col-md-4">
+
+      <!-- Social -->
+      <div class="col-md-3">
         <h3><i class="fas fa-heart"></i> Socialize</h3>
         <div id="social-icons">
           {% if site.facebook_link %}
@@ -29,7 +45,7 @@
             </a>
           {% endif %}
           {% if site.instagram_link %}
-            <a href="{{ site.instagram_link }} " target="_blank" class="btn-group instagram">
+            <a href="{{ site.instagram_link }}" target="_blank" class="btn-group instagram">
               <i class="fab fa-instagram"></i>
             </a>
           {% endif %}
@@ -38,7 +54,7 @@
     </div>
   </div>
 
-  <div class="copyright text center">
+  <div class="copyright text-center">
     <p>&copy; Copyright {{ site.time | date: '%Y' }}, Pierce's Paw Paradise, LLC, All Rights Reserved.</p>
   </div>
 </footer>
