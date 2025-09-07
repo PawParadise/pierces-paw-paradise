@@ -752,3 +752,62 @@ footer h3 {
     font-size: 14px;
   }
 }
+
+
+/*==========================================================================
+* Optional Carousel for Contrast Background
+* ==========================================================================
+/* === Improve carousel caption legibility === */
+#carousel-section .carousel-caption{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 24px;
+  /* dark-to-transparent gradient so text pops on any image */
+  background: linear-gradient(to top, rgba(0,0,0,.70), rgba(0,0,0,.40), rgba(0,0,0,0));
+  text-shadow: 0 2px 6px rgba(0,0,0,.65);
+}
+
+/* Title */
+#carousel-section .carousel-caption .carousel-title{
+  font-weight: 800;
+  color: #1bbd9b !important; /* brand green */
+}
+
+/* Body line */
+#carousel-section .carousel-caption .carousel-body{
+  font-weight: 700;
+  color: #ffffff !important; /* white reads well over the gradient */
+}
+
+/* Tweak sizes on small screens so the text stays crisp */
+@media (max-width: 767px){
+  #carousel-section .carousel-caption{ padding: 12px 16px; }
+  #carousel-section .carousel-caption .carousel-title{ font-size: 18px; }
+  #carousel-section .carousel-caption .carousel-body{ font-size: 12px; }
+}
+
+/* Keep each slide a positioning context */
+#carousel-section .carousel .item{ position: relative; }
+
+/* Pin caption to the bottom and keep it full width */
+#carousel-section .carousel-caption{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Show the title on phones (override Bootstrap's hidden-xs) */
+@media (max-width: 767px){
+  #carousel-section .carousel-title.hidden-xs{
+    display: block !important;   /* unhide title on small screens */
+  }
+  #carousel-section .carousel-caption{ padding: 12px 16px; }
+  #carousel-section .carousel-caption .carousel-title{ 
+    font-size: 18px; line-height: 1.2; margin-bottom: 4px;
+  }
+  #carousel-section .carousel-caption .carousel-body{
+    font-size: 13px; line-height: 1.3;
+  }
+}
