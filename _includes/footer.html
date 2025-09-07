@@ -6,6 +6,8 @@
         <h3><i class="fa-solid fa-feather"></i> Contact:</h3>
         <p class="footer-contact">
           {{ site.company_name }} <br>
+          <a href="https://maps.app.goo.gl/HqoAAuBB156h9MJn9" target="_blank" rel="noopener" title="Open in Google Maps">
+          1700 Periwinkle Way, Suite 8, Sanibel, FL 33957</a><br>
           Phone: {{ site.telephone_number }} <br>
           <!-- Fax: {{ site.fax_number }} <br> -->
           Email: {{ site.company_email }}<br>
@@ -14,7 +16,7 @@
       <div class="col-md-4">
         <h3><i class="fa fa-external-link-alt"></i> Links</h3>
         <p><a href="{{ site.baseurl }}/about"> About ( Who we are )</a></p>
-        <p><a href="{{ site.baseurl }}/about"> Services ( What we do )</a></p>
+        <!-- <p><a href="{{ site.baseurl }}/about"> Services ( What we do )</a></p> -->
         <p><a href="{{ site.baseurl }}/contact"> Contact ( Feel free to contact )</a></p>
         <p><a href="{{ site.baseurl }}/blog"> Blog ( Write to us )</a></p>
       </div>
@@ -22,12 +24,12 @@
         <h3><i class="fas fa-heart"></i> Socialize</h3>
         <div id="social-icons">
           {% if site.facebook_link %}
-            <a href="{{ site.facebook_link }}" class="btn-group facebook">
+            <a href="{{ site.facebook_link }}" target="_blank" class="btn-group facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
           {% endif %}
           {% if site.instagram_link %}
-            <a href="{{ site.instagram_link }}" class="btn-group instagram">
+            <a href="{{ site.instagram_link }} " target="_blank" class="btn-group instagram">
               <i class="fab fa-instagram"></i>
             </a>
           {% endif %}
