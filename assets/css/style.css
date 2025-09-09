@@ -838,3 +838,41 @@ footer h3 {
     font-size: 13px; line-height: 1.3;
   }
 }
+
+
+/* Carousel image tweaks */
+/* Stop scroll anchoring so the page doesn't jump when switching from one image to the next */
+#carousel-section .carousel { 
+  position: relative;
+  overflow: hidden;
+  overflow-anchor: none;
+}
+
+/* Give the carousel a consistent frame */
+#carousel-section .carousel,
+#carousel-section .carousel .carousel-inner,
+#carousel-section .carousel .item {
+  height: 400px;          /* desktop height; adjust if you prefer */
+}
+
+/* Make every slide fill the frame without stretching */
+#carousel-section .carousel .item { position: relative; }
+#carousel-section .carousel .item img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;       /* crops edges evenly, no distortion */
+  display: block;
+}
+
+/* Mobile: slightly shorter to avoid pushing content down */
+@media (max-width: 767px){
+  #carousel-section .carousel,
+  #carousel-section .carousel .carousel-inner,
+  #carousel-section .carousel .item { height: 300px; }
+}
+
+/* Keep the top of each slide visible (avoid cropping off heads/signs) */
+#carousel-section .carousel .item img{
+  object-position: center top;   /* was center center */
+}
+
