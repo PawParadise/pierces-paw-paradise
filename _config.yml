@@ -1,8 +1,10 @@
 # Site settings
 title: Pierce's Paw Paradise
 email: store@piercespawparadise.com
-description: > 
-  Welcome to Pierce's Paw Paradise — your go-to destination for all things pets (except the pets themselves)!  Nestled in the heart of Sanibel Island at Jerry's Plaza, we're a locally owned and operated pet supply store offering a thoughtfully curated selection of toys, treats, collars, leashes, home goods, gifts, and high-quality dog and cat food.
+description: "Locally owned pet boutique on Sanibel Island offering curated toys, treats, collars, food, and gifts."
+tagline: "Pet Store on Sanibel Island, FL"
+author: "Pierce's Paw Paradise"
+logo: /assets/img/slider/logo.png
 baseurl: ""  # For GitHub Pages us /pierces-paw-paradise
 url: "https://piercespawparadise.com"
 
@@ -26,3 +28,5 @@ instagram_link: https://www.instagram.com/piercespawparadise/
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
